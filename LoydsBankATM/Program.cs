@@ -17,9 +17,10 @@ namespace LoydsBankATM
            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            
             CardEntery ce = new CardEntery();
             Application.Run(new CardEntery());
+            
 
             if (ce.getCardValidated())
             {

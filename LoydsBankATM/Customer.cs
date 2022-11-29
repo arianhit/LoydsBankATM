@@ -15,14 +15,18 @@ namespace LoydsBankATM
         private string customerPhone;
         private string customerAddress;
 
-        public Customer(int customerId, string customerFirstName, string customerLastName, string customerEmail, string customerPhone, string customerAddress)
+        public Customer(int customerId, string customerFirstName, string customerLastName, string customerPhone, string customerAddress, string customerEmail)
         {
             this.customerId = customerId;
             this.customerFirstName = customerFirstName;
             this.customerLastName = customerLastName;
-            this.customerEmail = customerEmail;
             this.customerPhone = customerPhone;
             this.customerAddress = customerAddress;
+            this.customerEmail = customerEmail;
+        }
+        public Customer()
+        {
+
         }
 
         public int GetCustomerId() { return customerId; }
